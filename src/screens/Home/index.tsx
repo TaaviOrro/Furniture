@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, FlatList } from 'react-native';
+import { useRouter } from 'expo-router';
+import { FlatList, Pressable, Text, View } from 'react-native';
 import styles from './styles';
 
 const CATEGORIES = ['Chairs', 'Tables', 'Sofas', 'Beds'];
@@ -10,6 +11,8 @@ const PRODUCTS = [
 ];
 
 const Home: React.FC = () => {
+  const router = useRouter();
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Discover furniture</Text>
@@ -33,10 +36,13 @@ const Home: React.FC = () => {
         data={PRODUCTS}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <View style={styles.productCard}>
+          <Pressable
+            style={styles.productCard}
+            onPress={() => router.push(/product/)}
+          >
             <Text style={styles.productName}>{item.name}</Text>
             <Text style={styles.productPrice}>{item.price}</Text>
-          </View>
+          </Pressable>
         )}
       />
     </View>
