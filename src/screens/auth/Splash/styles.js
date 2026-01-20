@@ -7,7 +7,6 @@ const styles = StyleSheet.create ({
         justifyContent: 'center',
         alignItems: 'center',
         height: '100%',
-        borderWidth: 1
     },
     image: {
         width: '100%',
