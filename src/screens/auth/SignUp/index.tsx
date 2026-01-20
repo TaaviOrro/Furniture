@@ -3,7 +3,11 @@ import { View, Text, TextInput } from 'react-native';
 import Button from '../../../components/Button';
 import styles from './styles';
 
-const SignUp: React.FC = () => {
+type SignUpProps = {
+  onSubmit?: () => void;
+};
+
+const SignUp: React.FC<SignUpProps> = ({ onSubmit }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Sign up</Text>
@@ -28,9 +32,10 @@ const SignUp: React.FC = () => {
         />
       </View>
 
-      <Button title="Create account" />
+      <Button title="Create account" onPress={onSubmit} />
     </View>
   );
 };
 
 export default SignUp;
+
