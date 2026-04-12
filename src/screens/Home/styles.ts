@@ -1,5 +1,5 @@
+import { colors } from '@/utils/colors';
 import { StyleSheet } from 'react-native';
-import { colors } from '../../utils/colors';
 
 const styles = StyleSheet.create({
   container: {
@@ -52,6 +52,21 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: colors.orange,
     fontWeight: '600',
+  },
+  navButtons: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginBottom: 16,
+  },
+  navButton: {
+    backgroundColor: colors.orange,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+  },
+  navButtonText: {
+    color: colors.white,
+    fontWeight: 'bold',
   },
 });
 

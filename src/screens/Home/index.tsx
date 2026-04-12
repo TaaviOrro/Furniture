@@ -1,5 +1,5 @@
-import React from 'react';
 import { useRouter } from 'expo-router';
+import React from 'react';
 import { FlatList, Pressable, Text, View } from 'react-native';
 import styles from './styles';
 
@@ -16,6 +16,15 @@ const Home: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Discover furniture</Text>
+
+      <View style={styles.navButtons}>
+        <Pressable style={styles.navButton} onPress={() => router.push('/favorites' as any)}>
+          <Text style={styles.navButtonText}>Favorites</Text>
+        </Pressable>
+        <Pressable style={styles.navButton} onPress={() => router.push('/profile' as any)}>
+          <Text style={styles.navButtonText}>Profile</Text>
+        </Pressable>
+      </View>
 
       <Text style={styles.sectionTitle}>Categories</Text>
       <FlatList
@@ -38,7 +47,7 @@ const Home: React.FC = () => {
         renderItem={({ item }) => (
           <Pressable
             style={styles.productCard}
-            onPress={() => router.push(/product/)}
+            onPress={() => router.push(`/product/${item.id}`)}
           >
             <Text style={styles.productName}>{item.name}</Text>
             <Text style={styles.productPrice}>{item.price}</Text>
