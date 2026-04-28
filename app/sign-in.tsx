@@ -4,5 +4,10 @@ import SignInScreen from '../src/screens/auth/SignIn';
 export default function SignIn() {
   const router = useRouter();
 
-  return <SignInScreen onSubmit={() => router.push('/home')} />;
+  return (
+    <SignInScreen
+      onSubmit={() => router.push('/home')}
+      onSignUp={() => router.push('/sign-up')}
+    />
+  );
 }
