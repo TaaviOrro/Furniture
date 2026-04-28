@@ -1,51 +1,63 @@
-# Welcome to your Expo app 👋
+# 🛋️ Furniture App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, cross-platform mobile application for browsing and shopping for furniture, built with [React Native](https://reactnative.dev/) and [Expo](https://expo.dev/). 
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Product Catalog**: Browse a sleek list of furniture items (chairs, tables, sofas, etc.).
+- **State Management**: Built-in state handling using React Context API for cart/favorites.
+- **Modern Navigation**: Seamless screen transitions using Expo Router (file-based routing).
+- **TypeScript**: Strictly typed for better code quality and maintainability.
 
-   ```bash
-   npm install
-   ```
+## 📸 Screenshots
+*(Tip: Add some screenshots or a GIF of your app running here!)*
+## 🛠 Tech Stack
 
-2. Start the app
+- **Framework**: [React Native](https://reactnative.dev/) / [Expo](https://expo.dev/)
+- **Navigation**: [Expo Router](https://docs.expo.dev/router/introduction/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **State Management**: React Context
 
-   ```bash
-   npx expo start
-   ```
+## 📁 Project Structure
 
-In the output, you'll find options to open the app in a
+The codebase is organized to be scalable and easy to read:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- `/app` - Contains the screens and navigation layout (Expo Router).
+- `/context` - Global state providers (e.g., Cart context, Theme context).
+- `/data` - Mock data and models for the furniture catalog.
+- `/src` - Reusable UI components (buttons, product cards, layout elements).
+- `/utils` - Helper functions and utilities.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🏃‍♂️ Getting Started
 
-## Get a fresh project
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed, and the [Expo Go](https://expo.dev/go) app installed on your iOS or Android device.
 
-When you're ready, run:
-
+### 1. Clone the repository
 ```bash
-npm run reset-project
-```
+git clone [https://github.com/TaaviOrro/Furniture.git](https://github.com/TaaviOrro/Furniture.git)
+cd Furniture
+2. Install dependencies
+Bash
+npm install
+3. Start the app
+Bash
+npx expo start
+Once the server starts, you can:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Scan the QR code with your phone's camera (iOS) or the Expo Go app (Android).
 
-## Learn more
+Press a to open in an Android Emulator.
 
-To learn more about developing your project with Expo, look at the following resources:
+Press i to open in an iOS Simulator.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Press w to open it on the web.
 
-## Join the community
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to check out the issues page.
 
-Join our community of developers creating universal apps.
+📝 License
+This project is open-source and available under the MIT License.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# Furniture
+Created by Taavi Orro
